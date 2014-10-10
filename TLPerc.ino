@@ -32,7 +32,7 @@ void loop(){
 		Serial.write("0");
 		btSerial.write("0");
 	}
-	Sirial.println("%x",signal);
-	btSirial.println("%x",signal);
+	Sirial.println(signal,HEX);
+	btSirial.println(signal,HEX);
 	signal = 0;
 }
